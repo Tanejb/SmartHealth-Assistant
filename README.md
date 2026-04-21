@@ -1,28 +1,32 @@
 # SmartHealth-Assistant
 
-Repozitorij vsebuje prototipno dokumentacijo za projekt **Smart Health Assistant**.
+Prototipna dokumentacija za projekt **Smart Health Assistant** pri predmetu *Tehnologije za vseprisotne aplikacije* (UM FERI, 2025/2026).
 
-## Glavna dokumentacija
+## O projektu
 
-- `prototipna_dokumentacija_v2.md`
+Smart Health Assistant je mobilna mHealth aplikacija za:
+- spremljanje osnovnih zdravstvenih podatkov,
+- beleženje simptomov in počutja,
+- upravljanje zdravil in opomnikov,
+- pridobivanje podpornih informacij iz spletnih virov.
 
-## Diagrami
+Aplikacija je zasnovana kot podpora uporabniku pri vsakodnevni skrbi za zdravje in **ne** nadomešča strokovne medicinske obravnave.
 
-- `usecase.svg`
-- `er.svg`
-- `navigation.svg`
+## Ključne funkcionalnosti
 
-## Premium mockupi
+- registracija in urejanje zdravstvenega profila,
+- beleženje simptomov, meritev in zgodovine vnosov,
+- opomniki za zdravila,
+- glasovni vnos (Speech-to-Text),
+- OCR skeniranje embalaže/navodil,
+- AI povzetek uporabniškega stanja,
+- osnovno offline delovanje s predpomnjenjem podatkov,
+- večjezični uporabniški vmesnik in nastavitve.
 
-Mapa `mockups-premium/` vsebuje 10 ločenih SVG zaslonov s šumniki:
+## Kje je dokumentacija
 
-1. Registracija in profil
-2. Nadzorna plošča
-3. Simptomi in govorni vnos
-4. Meritve
-5. Zdravila in opomniki
-6. API informacije
-7. OCR skeniranje
-8. AI povzetek
-9. Zgodovina in offline
-10. Nastavitve in jeziki
+Vsa oddajna dokumentacija je v mapi `docs/`:
+
+- `docs/prototipna_dokumentacija_v2.md` (glavni dokument),
+- `docs/usecase.svg`, `docs/er.svg`, `docs/navigation.svg` (diagrami),
+- `docs/mockups/` (10 ločenih premium SVG prototipov zaslonskih mask).

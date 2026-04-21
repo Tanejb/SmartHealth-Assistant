@@ -46,34 +46,34 @@ Opomba: `API_CACHE` je v modelu vezan na `USER_PROFILE` (uporabniški predpomnil
 Spodaj je 10 ločenih zaslonov, ki skupaj pokrijejo vse funkcionalnosti iz priprave projekta.
 
 ### 5.1 Registracija in zdravstveni profil
-![Registracija in profil](./mockups-premium/screen01-onboarding.svg)
+![Registracija in profil](./mockups/screen01-onboarding.svg)
 
 ### 5.2 Nadzorna plošča
-![Nadzorna plošča](./mockups-premium/screen02-dashboard.svg)
+![Nadzorna plošča](./mockups/screen02-dashboard.svg)
 
 ### 5.3 Beleženje simptomov in govorni vnos
-![Simptomi in govorni vnos](./mockups-premium/screen03-symptom-voice.svg)
+![Simptomi in govorni vnos](./mockups/screen03-symptom-voice.svg)
 
 ### 5.4 Vnos meritev
-![Meritve](./mockups-premium/screen04-measurements.svg)
+![Meritve](./mockups/screen04-measurements.svg)
 
 ### 5.5 Upravljanje zdravil in opomniki
-![Zdravila in opomniki](./mockups-premium/screen05-medications-reminders.svg)
+![Zdravila in opomniki](./mockups/screen05-medications-reminders.svg)
 
 ### 5.6 Pridobivanje informacij iz zunanjega API
-![API informacije](./mockups-premium/screen06-api-info.svg)
+![API informacije](./mockups/screen06-api-info.svg)
 
 ### 5.7 OCR skeniranje embalaže/navodil
-![OCR skeniranje](./mockups-premium/screen07-ocr-scan.svg)
+![OCR skeniranje](./mockups/screen07-ocr-scan.svg)
 
 ### 5.8 AI povzetek uporabniškega stanja
-![AI povzetek](./mockups-premium/screen08-ai-summary.svg)
+![AI povzetek](./mockups/screen08-ai-summary.svg)
 
 ### 5.9 Zgodovina vnosov in offline predpomnjenje
-![Zgodovina in offline](./mockups-premium/screen09-history-offline.svg)
+![Zgodovina in offline](./mockups/screen09-history-offline.svg)
 
 ### 5.10 Večjezični vmesnik in nastavitve
-![Nastavitve in jeziki](./mockups-premium/screen10-settings-multilingual.svg)
+![Nastavitve in jeziki](./mockups/screen10-settings-multilingual.svg)
 
 ---
 
