@@ -25,23 +25,19 @@ Aplikacija je namenjena podpori pri samonadzoru zdravja in ne nadomešča medici
 
 ![Use Case diagram](./usecase.svg)
 
-Vir: `usecase.mmd`
-
 ---
 
 ## 3. E-R diagram podatkovne baze
 
 ![E-R diagram](./er.svg)
 
-Vir: `er.mmd`
+Opomba: `API_CACHE` je v modelu vezan na `USER_PROFILE` (uporabniški predpomnilnik spletnih odgovorov), `API_CACHE_ITEM` pa vsebuje posamezne predpomnjene zapise.
 
 ---
 
 ## 4. Navigacijski tok aplikacije
 
 ![Navigacijski tok](./navigation.svg)
-
-Vir: `navigation.mmd`
 
 ---
 
