@@ -1,0 +1,17 @@
+flowchart TD
+    A[Uvod / Onboarding] --> B[Profil uporabnika]
+    B --> C[Nadzorna plošča]
+
+    C --> D[Vnos simptomov]
+    C --> E[Meritve]
+    C --> F[Zdravila in opomniki]
+    C --> G[Zgodovina]
+    C --> H[OCR skeniranje]
+    C --> I[AI povzetek]
+    C --> J[Nastavitve]
+
+    D --> G
+    E --> G
+    F --> G
+    H --> F
+    G --> I

@@ -1,0 +1,119 @@
+erDiagram
+    USER_PROFILE ||--o{ SYMPTOM_ENTRY : "ustvari"
+    USER_PROFILE ||--o{ MEASUREMENT : "zabelezi"
+    USER_PROFILE ||--o{ MEDICATION : "upravlja"
+    USER_PROFILE ||--o{ AI_SUMMARY : "prejme"
+    USER_PROFILE ||--|| SETTINGS : "ima"
+
+    MEDICATION ||--o{ MEDICATION_REMINDER : "ima"
+    MEDICATION ||--o{ OCR_SCAN_RESULT : "lahko nastane iz"
+
+    SYMPTOM_ENTRY ||--o{ AI_SUMMARY_SOURCE : "prispeva"
+    MEASUREMENT ||--o{ AI_SUMMARY_SOURCE : "prispeva"
+    AI_SUMMARY ||--o{ AI_SUMMARY_SOURCE : "vsebuje vire"
+
+    API_CACHE ||--o{ API_CACHE_ITEM : "vsebuje"
+
+    USER_PROFILE {
+        int user_id PK
+        string full_name
+        int age
+        string sex
+        float height_cm
+        float weight_kg
+        string allergies
+        string chronic_conditions
+        datetime created_at
+        datetime updated_at
+    }
+
+    SYMPTOM_ENTRY {
+        int symptom_id PK
+        int user_id FK
+        datetime entry_time
+        string symptom_text
+        int intensity_1_10
+        string mood
+        string notes
+        string input_type
+    }
+
+    MEASUREMENT {
+        int measurement_id PK
+        int user_id FK
+        datetime measured_at
+        float body_temperature_c
+        int heart_rate_bpm
+        string blood_pressure
+        string notes
+    }
+
+    MEDICATION {
+        int medication_id PK
+        int user_id FK
+        string name
+        string dosage
+        string frequency
+        string instructions
+        bool is_active
+        datetime created_at
+    }
+
+    MEDICATION_REMINDER {
+        int reminder_id PK
+        int medication_id FK
+        time reminder_time
+        string days_pattern
+        bool notifications_enabled
+        datetime next_trigger_at
+    }
+
+    OCR_SCAN_RESULT {
+        int scan_id PK
+        int medication_id FK
+        datetime scanned_at
+        string image_uri
+        string extracted_text
+        float confidence
+    }
+
+    AI_SUMMARY {
+        int summary_id PK
+        int user_id FK
+        datetime generated_at
+        string summary_text
+        string recommendation_text
+        string model_name
+        string disclaimer
+    }
+
+    AI_SUMMARY_SOURCE {
+        int source_id PK
+        int summary_id FK
+        string source_type
+        int source_ref_id
+    }
+
+    API_CACHE {
+        int cache_id PK
+        string provider_name
+        datetime last_sync_at
+        datetime expires_at
+    }
+
+    API_CACHE_ITEM {
+        int item_id PK
+        int cache_id FK
+        string resource_key
+        string payload_json
+        datetime fetched_at
+    }
+
+    SETTINGS {
+        int settings_id PK
+        int user_id FK
+        string app_language
+        string app_theme
+        bool notification_permission
+        bool privacy_mode
+    }

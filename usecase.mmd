@@ -1,0 +1,35 @@
+flowchart LR
+    U[Uporabnik]
+    API[Zunanji zdravstveni API]
+    AI[Zunanji AI/LLM servis]
+
+    subgraph SHA[Smart Health Assistant]
+        UC1((Registracija / urejanje profila))
+        UC2((Beleženje simptomov in meritev))
+        UC3((Upravljanje zdravil))
+        UC4((Nastavljanje opomnikov))
+        UC5((Pregled zgodovine vnosov))
+        UC6((Pridobivanje informacij o zdravilih))
+        UC7((Glasovni vnos simptomov))
+        UC8((OCR skeniranje embalaže/navodil))
+        UC9((AI povzetek uporabniškega stanja))
+        UC10((Nastavitve jezika in teme))
+    end
+
+    U --> UC1
+    U --> UC2
+    U --> UC3
+    U --> UC4
+    U --> UC5
+    U --> UC6
+    U --> UC7
+    U --> UC8
+    U --> UC9
+    U --> UC10
+
+    API --> UC6
+    AI --> UC9
+
+    UC7 -. razširitev vnosa .-> UC2
+    UC8 -. razširitev vnosa .-> UC3
+    UC4 -. del upravljanja zdravil .-> UC3

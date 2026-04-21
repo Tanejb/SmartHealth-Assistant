@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .title { font: 700 44px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 24px Arial, sans-serif; fill: #334155; }
+      .screenTitle { font: 700 38px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 22px Arial, sans-serif; fill: #1e293b; }
+      .text { font: 20px Arial, sans-serif; fill: #334155; }
+      .small { font: 18px Arial, sans-serif; fill: #475569; }
+      .btnText { font: 700 22px Arial, sans-serif; fill: #ffffff; }
+      .chipText { font: 600 18px Arial, sans-serif; fill: #0f172a; }
+      .card { fill: #ffffff; stroke: #dbeafe; stroke-width: 2; rx: 22; filter: url(#shadow); }
+      .field { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .chip { fill: #e2e8f0; stroke: #cbd5e1; stroke-width: 1; rx: 12; }
+      .phone { fill: #f8fafc; stroke: #0f172a; stroke-width: 4; rx: 46; }
+      .notch { fill: #0f172a; rx: 12; }
+      .cta { fill: url(#primaryGrad); rx: 16; }
+      .section { fill: #eef2ff; stroke: #bfdbfe; stroke-width: 1; rx: 14; }
+      .badge { fill: #dbeafe; stroke: #93c5fd; stroke-width: 1; rx: 10; }
+      .warn { fill: #fff7ed; stroke: #fdba74; stroke-width: 1; rx: 10; }
+      .ok { fill: #ecfeff; stroke: #67e8f9; stroke-width: 1; rx: 10; }
+    </style>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bgGrad)"/>
+  <text x="60" y="90" class="title">Smart Health Assistant</text>
+  <text x="60" y="126" class="subtitle">04 - Meritve in zdravstveni podatki</text>
+  <rect x="270" y="160" width="540" height="1640" class="phone"/>
+  <rect x="455" y="178" width="170" height="22" class="notch"/>
+
+  <text x="330" y="260" class="screenTitle">Dodaj meritev</text>
+  <rect x="320" y="295" width="440" height="1220" class="card"/>
+  <text x="350" y="345" class="label">Telesna temperatura (C)</text>
+  <rect x="350" y="360" width="380" height="60" class="field"/>
+  <text x="350" y="450" class="label">Srcni utrip (bpm)</text>
+  <rect x="350" y="465" width="380" height="60" class="field"/>
+  <text x="350" y="555" class="label">Krvni tlak</text>
+  <rect x="350" y="570" width="380" height="60" class="field"/>
+  <text x="350" y="660" class="label">Razpolozenje</text>
+  <rect x="350" y="675" width="380" height="60" class="field"/>
+  <text x="350" y="765" class="label">Dodatne opombe</text>
+  <rect x="350" y="780" width="380" height="170" class="field"/>
+  <rect x="350" y="980" width="380" height="72" class="cta"/>
+  <text x="500" y="1025" class="btnText">Shrani meritev</text>
+  <rect x="350" y="1070" width="380" height="130" class="section"/>
+  <text x="370" y="1110" class="small">Podatki se shranijo lokalno v Room DB.</text>
+  <text x="370" y="1140" class="small">Zgodovina je na voljo tudi offline.</text>
+</svg>
